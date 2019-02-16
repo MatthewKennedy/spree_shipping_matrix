@@ -1,4 +1,4 @@
-class CreateSpreeShippingMatrixRules < ActiveRecord::Migration
+class CreateSpreeShippingMatrixRules < ActiveRecord::Migration[4.2]
   def change
     create_table :spree_shipping_matrix_rules do |t|
       t.references :shipping_matrix, index: true
